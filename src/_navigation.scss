@@ -1,0 +1,20 @@
+// &-link artinya .navigation-link
+
+.navigation{
+    background: $danger-color;
+    margin-bottom: $margin-bottom;
+    &-link{
+        display: inline-block;
+        padding: 18px;
+        color: $white;
+        text-decoration: none;
+        transition: background .5s ease-in-out;
+        &:hover{
+            background: darken($danger-color, 10%);
+        }
+    }
+    
+}
+
+
+

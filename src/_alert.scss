@@ -1,0 +1,28 @@
+.alert{
+    padding: 15px;
+    // border: 2px solid #eee;
+    border-left: 6px solid #eee;
+    // background-color: #ddd;
+    margin-bottom: 15px;
+    // @extend .rounded;
+    p{
+        margin-bottom: 10px;
+    }
+    // penulisan baru
+    &-danger{
+        @include alert-variant($danger-color);
+    }
+    &-primary{
+        @include alert-variant($primary-color);
+    }
+    &-info{
+        @include alert-variant($info-color);
+    }
+}
+
+// penulisan lama
+// .alert-danger{
+//     border-color: $danger-color;
+//     background-color: lighten($color:$danger-color, $amount: 45%);
+//     color: darken($color: $danger-color, $amount: 35%);
+// }

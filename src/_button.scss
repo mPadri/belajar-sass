@@ -1,0 +1,24 @@
+.btn{
+    padding: 10px 16px;
+    background: #f9f9f9;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: center;
+    @extend .rounded;
+}
+
+.btn-primary{
+    @include btn-variant($primary-color, $white);
+}
+
+.btn-info{
+    @include btn-variant($info-color, $white);
+}
+
+.btn-danger{
+    @include btn-variant($danger-color, $white);
+}
+
+.btn-dark{
+    @include btn-variant($dark-color, $white);
+}

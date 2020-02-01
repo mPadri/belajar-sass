@@ -1,0 +1,13 @@
+@mixin btn-variant($background, $color){
+    background-color: $background;
+    color: $white;
+    &:hover{
+        background-color: lighten($background, 10%); 
+     }
+}
+
+@mixin alert-variant($color: #eee) {
+    background-color: lighten($color: $color, $amount: 45%);
+    border-color: $color;
+    color: darken($color, 35%);
+}
